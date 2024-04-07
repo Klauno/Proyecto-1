@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.background-image {
+  background-image:url(https://www.gratefulweb.com/sites/default/files/inline-images/9A4A1051.JPG); ;
+  background-size: cover;
+  background-position: center;
+  background-position:right top ;
+ }
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+ }
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+ }
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+ }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Cancion</title>
+    <link rel="stylesheet" type="text/css" href="estilos/styleprincipal.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="background-image">
+    <div class="sidebar fixed bg-violet-600 text-center h-screen w-1/8 fixed top-0 left-0" >
+        <h1 class=" my-10 antialiased text-xl text-indigo-950">Editar Cancion</h1>
+        <hr class="my-5"> 
+        <a href="albums.html" class=" my-10  hover:text-indigo-950">Albums</a>
+        <a href="addsong.html" class=" my-10 hover:text-indigo-950">Agregar otra Cancion</a>
+        <a href="index.html" class=" my-10 hover:text-indigo-950">Menu</a>
+        <a href="login.html" class=" my-10 hover:text-indigo-950">Salir</a>
+    </div> 
+    <div class="ml-96 w-4/6 text-center text-violet-50 justify-center absolute mt-12">
+        <div class="w-80  max-w-sm  bg-purple-900 rounded-lg shadow-md p-6">
+                <h2 class="font-bold text-center text-4xl relative mb-10 text-black">Agregar Canción</h2>
+                <form action="" method="post">
+                  <label for="album">Nombre de la Canción</label>
+                  <input class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
+                         type= "text" id="Album" name="Album" required /><br /><br />
+                  <label for="duracion">Duración</label>
+                  <input class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
+                         type="number" id="duracion" name="duracion" min="1900" max="2024" required />
+                  <br /><br />
+                  <label for="Canción">Link de la Canción en Youtube</label>
+                  <input class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
+                         type="url" id="" name="" class="" placeholder="Colocar link de la canción en youtube" /> <br> <br> 
+                  <span> 
+                    <button class="text-xl bg-blue-500 text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Guardar</span>
+                        <link rel="stylesheet" href="editarAlbum"></button>
+                    <button class="text-xl bg-blue-500 text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Cancelar</span>
+                        <link rel="stylesheet" href="editarAlbum"></button>
+                  </span>
+                </form>
+        
+       </div>
+    </div>
+</body>
+</html>

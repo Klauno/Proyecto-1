@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Login</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="estilos/styleprincipal.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="login.js"></script>
 </head>
 <body class="background-image">
   <div class="flex flex-col items-center justify-center h-screen">
@@ -16,23 +17,23 @@
       border-blue-600
       border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
       active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
-        <a href="index.html"target="">Home</a>
+        <a href="index.html" target="">Home</a>
       </button>
      </div>
-      <div class="w-80 max-w-md  bg-purple-900 rounded-lg shadow-md p-6">
+      <div class="w-full sm:w-96 bg-purple-900 rounded-lg shadow-md p-6">
       <h2 class="text-2xl font-bold text-gray-900 mb-4">Iniciar sesión</h2>
-       <form action="https://formspree.io/f/xyyrbywv" method="post" >
-        <input type="email" class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-6 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 " placeholder="Email"><br>
-        <input type="password" class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 " placeholder="Password">
+       <form action="https://formspree.io/f/xyyrbywv" method="post" onsubmit="return validarInicioSesion()">
+        <input type="email" id="email" class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-6 w-full focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 " placeholder="Email"><br>
+        <input type="password" id="password" class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 w-full focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 " placeholder="Password">
         <div class="flex items-center justify-between flex-wrap">
           <label for="remember-me" class="text-sm text-gray-900 cursor-pointer">
             <input type="checkbox" id="remember-me" class="mr-2">
             Recordar
           </label>
-          <p class="text-gray-900 mt-4"> ¿No tienes una cuenta? <a href="signUp.html" class="text-sm text-blue-500 -200 hover:underline mt-4">Signup</a></p>
+          <p class="text-gray-900 mt-4 w-full sm:w-auto"> ¿No tienes una cuenta? <a href="signUp.html" class="text-sm text-blue-500 -200 hover:underline mt-4">Signup</a></p>
         </div>
         
-          <button type="submit" class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 ">Login</button>
+          <button type="submit" class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 w-full">Login</button>
        </form>
     </div>
   </div> 

@@ -6,40 +6,40 @@
     <title>SignUp</title>
     <link rel="stylesheet" href="estilos/styleprincipal.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="singUp.js"></script>
 </head>
-<body class="background-image">
-    <div class="flex flex-col items-center justify-center h-screen">
-        <div class="flex items-center justify-center mb-8">
-            <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
-            border-blue-600
-            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
-            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
-              <a href="index.html"target="">Home</a>
-            </button></div>
-       <div class="w-full max-w-md  bg-purple-900 rounded-lg shadow-md p-6">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Registro</h3>
-                   <form action="https://formspree.io/f/xyyrbywv" method="get" >
-                    <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <div>
-            <h4>Nombre</h4>
-            <input class=" text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                   type="text"placeholder="Nombre" minlength="3"maxlength="10" id="nombre"name="nombre-usuario"required/>
-            <h4>Apellido</h4>
-            <input class=" text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                   type="text"placeholder="Apellido" minlength="3"maxlength="10" id="apellido"name="apellido-usuario"required/>     
-            <h4>Contraseña</h4>
-            <input class=" text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                   type="password" placeholder="Password" name="usuario_contrasena"required/>
-            <h4>Correo Electronico</h4>
-            <input class=" text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
-                   type="email" placeholder="Email" required/>
-        </div>
-        <div>
-        <button class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
-        type="submit">enviar</button>
-        </div>
+<body class="background-image flex flex-col items-center justify-center">
+    <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
+            border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px] mt-10">
+        <a href="index.html" target="">Home</a>
+    </button>
+    
+    <div class="w-full max-w-md bg-purple-900 rounded-lg shadow-md p-6 mt-10">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Registro</h3>
+        <form id="signupForm" action="https://formspree.io/f/xyyrbywv" method="get">
+            <div class="flex flex-col">
+                <h4>Nombre</h4>
+                <input class="text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+                       type="text" placeholder="Nombre" minlength="3" maxlength="10" id="nombre" name="nombre-usuario" required/>
+                <h4>Apellido</h4>
+                <input class="text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+                       type="text" placeholder="Apellido" minlength="3" maxlength="10" id="apellido" name="apellido-usuario" required/>
+                <h4>Contraseña</h4>
+                <input class="text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+                       type="password" placeholder="Password" name="usuario_contrasena" required/>
+                <h4>Correo Electrónico</h4>
+                <input class="text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+                       type="email" placeholder="Email" required/>
+            </div>
+            <div class="flex justify-center">
+                <button class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
+                        type="submit">Enviar
+                </button>
+            </div>
+        </form>
     </div>
-    </form>
-</div>
+
+    
 </body>
 </html>

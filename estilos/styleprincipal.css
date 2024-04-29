@@ -3,26 +3,65 @@ body {
   padding: 0;
   height: 100%;
 }
+
 .background-image {
-  background-image:url(https://www.gratefulweb.com/sites/default/files/inline-images/9A4A1051.JPG); ;
+  background-image: url(https://www.gratefulweb.com/sites/default/files/inline-images/9A4A1051.JPG);
   background-size: cover;
   background-position: center;
-  background-position:right top ;
- }
+}
+
 .sidebar {
-  background-color: #333;
   color: #fff;
   padding: 20px;
-  width: 200px;
- }
+  width: 100px;
+}
 
-.sidebar h3 {
-  font-size: 18px;
-  margin-bottom: 20px;
- }
-.sidebar a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
+.ml-56 {
+  margin-left: 14rem; /* Ajusta esto según tus necesidades */
+}
+
+.p-8 {
+  padding: 2rem; /* Ajusta esto según tus necesidades */
+}
+
+.album-img {
+  width: 100%;
+  height: auto;
+}
+
+audio {
+  width: 200px;
+  margin-right: 20px;
+}
+
+#welcome {
+  font-size: 24px;
+  color: red;
+}
+
+.boton {
   margin-bottom: 10px;
- }
+}
+
+.album-link {
+  position: relative;
+  display: inline-block;
+  width: auto; /* Ancho automático para que se ajuste al contenido */
+}
+
+.contenedorimg {
+  display: inline-block;
+  position: relative;
+  width: fit-content; /* Ajustamos el ancho al contenido */
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 5px; /* Ajustamos la posición superior */
+  right: 5px; /* Ajustamos la posición derecha */
+  z-index: 1;
+  cursor: pointer;
+  color:red; /* Color del contorno de la estrella */
+}
+
+

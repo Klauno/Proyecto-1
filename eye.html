@@ -9,44 +9,58 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="background-image">
-    <div class="sidebar fixed bg-violet-600 text-center h-screen w-1/8 fixed top-0 left-0" >
-            <h1 class=" my-10 antialiased text-xl text-indigo-950">Eye in the Sky</h1>
-            <hr class="my-5">
-            <a href="albums.html" class=" my-10  hover:text-indigo-950">Albums</a>
-            <a href="addSong.html" class=" my-10  hover:text-indigo-950">Agregar Canciones</a>
-            <a href="index.html" class=" my-10 hover:text-indigo-950">Menu</a>
-            <a href="login.html" class=" my-10 hover:text-indigo-950">Salir</a>
+    <div class="sidebar fixed bg-violet-600 text-center h-screen w-1/8 fixed top-0 left-0">
+        <h1 class="my-10 antialiased text-xl text-indigo-950">Eye in the Sky</h1>
+        <hr class="my-5">
+        <a href="index.html" class="my-10 hover:text-indigo-950">Menu</a><br><br>
+        <a href="albums.html" class="my-10 hover:text-indigo-950">Albums</a><br><br>
+        <a href="addSong.html" class="my-10 hover:text-indigo-950">Agregar Canciones</a><br><br>
+        <a href="login.html" class="my-10 hover:text-indigo-950">Salir</a>
     </div>
-    <div class="ml-56 p-0">
-        <h1 class="text-violet-50 text-2xl font-bold text-center p-2">Eye in the Sky</h1>
-        <p class=" text-violet-50 text-center ">« Eye in the Sky » es una canción de la banda de rock británica Alan Parsons Project , lanzada como sencillo de su sexto álbum de estudio, Eye in the Sky (1982), en mayo de 1982. Entró en las listas de Billboard de Estados Unidos el 3 de julio y alcanzó el puesto número 3 en octubre de 1982, [4] el número 1 tanto en Canadá como en España, y el número 6 en Nueva Zelanda, convirtiéndose en su lanzamiento de mayor éxito. La pieza instrumental titulada " Sirius " da paso a "Eye in the Sky" en la grabación original.</p> 
-        <ul class="divide-y divide-gray-300">
-            <li class="flex items-center justify-between">
-                <span class="text-lg text-violet-50">Sirius</span>
-                <audio controls><source src="imagenes/mp3/Sirius.mp3" type="audio/mpeg">
-            </li>
-            <li class="flex items-center justify-between">
-                <span class="text-lg text-violet-50 ">Eye in The Sky</span>
-                <audio controls><source src="imagenes/mp3/Eye in The Sky - The Alan Parsons Project (Subtitulada)(InglésEspañol).mp3" type="audio/mpeg">
-            </li>
-            <li class="flex items-center justify-between">
-                <span class="text-lg text-violet-50">Old And Wise</span>
-                <audio controls><source src="imagenes/mp3/The Alan Parsons Symphonic Project Old And Wise (Live in Colombia).mp3" type="audio/mpeg">
-            </li>
-            <li class="flex items-center justify-between">
-                <span class="text-lg text-violet-50 ">Canción</span>
-                <audio controls><source src="" type="audio/mpeg">
-            </li>
-            <li class="flex items-center justify-between">
-                <span class="text-lg text-violet-50">Canción</span>
-                <audio controls><source src="" type="audio/mpeg">
-            </li>
-            <li class="flex items-center justify-between">
-                <span class="text-lg text-violet-50">......</span>
-                <audio controls><source src="" type="audio/mpeg">
-            </li>
-            <!--debria seguir agregando mas a la lista pero ya no tengo tiempo-->
-        </ul>
+    <br><br>
+    <div class="ml-32 p-0">
+        <h1 class="text-white text-2xl font-bold text-center p-2">Eye in the Sky</h1>
+        <p class="text-white text-center">« Eye in the Sky » es una canción de la banda de rock británica Alan Parsons Project , lanzada como sencillo de su sexto álbum de estudio, Eye in the Sky (1982), en mayo de 1982. Entró en las listas de Billboard de Estados Unidos el 3 de julio y alcanzó el puesto número 3 en octubre de 1982, [4] el número 1 tanto en Canadá como en España, y el número 6 en Nueva Zelanda, convirtiéndose en su lanzamiento de mayor éxito. La pieza instrumental titulada " Sirius " da paso a "Eye in the Sky" en la grabación original.</p> 
+        <br><br><br>
+        <div class="divide-y divide-gray-300">
+            <div class="flex items-center justify-between">
+                <span class="text-lg text-white">Sirius</span>
+                <audio controls>
+                    <source src="imagenes/mp3/Sirius.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-lg text-white">Eye in The Sky</span>
+                <audio controls>
+                    <source src="imagenes/mp3/Eye in The Sky - The Alan Parsons Project (Subtitulada)(InglésEspañol).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-lg text-white">Old And Wise</span>
+                <audio controls>
+                    <source src="imagenes/mp3/The Alan Parsons Symphonic Project Old And Wise (Live in Colombia).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-lg text-white">Canción</span>
+                <audio controls>
+                    <source src="..." type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-lg text-white">Canción</span>
+                <audio controls>
+                    <source src="..." type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-lg text-white">......</span>
+                <audio controls>
+                    <source src="..." type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <!-- Puedes seguir agregando más elementos de audio aquí -->
     </div>
 </body>
 </html>

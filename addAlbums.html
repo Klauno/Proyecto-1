@@ -7,44 +7,42 @@
     <link rel="stylesheet" type="text/css" href="estilos/styleprincipal.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="addAlbums.js"></script>
 </head>
 <body class="background-image">
     <div class="sidebar fixed bg-violet-600 text-center h-screen w-1/8 fixed top-0 left-0" >
        <div>
-           <h1 class=" my-10 antialiased text-xl text-indigo-950">Editar Album</h1>
-           <hr class="my-5"></div> 
-           <a href="albums.html" class=" my-10  hover:text-indigo-950">Albums</a>
-           <a href="addAlbums.html" class=" my-10 hover:text-indigo-950">Agregar Otro Album</a>
-           <a href="index.html" class=" my-10 hover:text-indigo-950">Menu</a>
-           <a href="login.html" class=" my-10 hover:text-indigo-950">Salir</a>
-        </div> 
+           <h1 class="my-10 antialiased text-xl text-indigo-950">Editar Album</h1>
+           <hr class="my-5">
+       </div> 
+       <a href="index.html" class="my-10 hover:text-indigo-950">Menu</a><br><br>
+       <a href="albums.html" class="my-10 hover:text-indigo-950">Albums</a><br><br>
+       <a href="addAlbums.html" class="my-10 hover:text-indigo-950">Agregar Otro Album</a><br><br>
+       <a href="login.html" class="my-10 hover:text-indigo-950">Salir</a>
     </div> 
-    <div class="ml-96 w-4/6 text-center text-violet-50 justify-center absolute mt-24">
-        <div class="w-full max-w-md  bg-purple-900 rounded-lg shadow-md p-6">
-                <h2 class="font-bold text-center text-2xl relative mb-10 text-black">Agregar Album</h2>
-                <form action="" method="post">
-                    <label for="album">Nombre del Album</label>
-                    <input class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                           type="text" id="Album" name="Album" required />
-                    <label for="lanzamiento">Año de Lanzamiento del Album</label>
-                    <input class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                           type="number" id="lanzamiento" name="lanzamiento" min="1900" max="2024"required/>
-                           <br /><br />
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="5">Descripción</textarea><br />
-                    <label for="imagen_album">Imagen del Album</label>
-                    <input class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
-                           type="url" id="imagen_album" name="imagen_album" class="imagen_album" placeholder="Colocar link de la imagen: https://www.webdelaimagen.com/album.jpg" />
-                           <span> 
-                            <button class="text-xl bg-blue-500 text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Guardar</span>
-                                <link rel="stylesheet" href="editarAlbum"></button>
-                            <button class="text-xl bg-blue-500 text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Cancelar</span>
-                                <link rel="stylesheet" href="editarAlbum"></button>
-                          </span>
-                  </form> 
-                
-              </div>
-            </div> 
-        
     
+    <div class="flex justify-center items-center h-screen">
+        <div class="flex flex-col justify-center items-center">
+            <form action="" method="post" class="bg-purple-900 rounded-lg shadow-md p-6" onsubmit="return validarEdicionAlbum()">
+                <h2 class=" text-center mb-10 text-white">Agregar Album</h2>
+                <label for="album" class="text-white">Nombre del Album</label>
+                <input type="text" id="album" name="album" required />
+                <br /><br />
+                <label for="lanzamiento" class="text-white">Año de Lanzamiento del Album</label>
+                <input type="number" id="lanzamiento" name="lanzamiento" min="1900" max="2024" required />
+                <br /><br />
+                <label for="descripcion" class="text-white">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="40" rows="10" required>Descripción</textarea>
+                <br /><br />
+                <label for="imagen_album" class="text-white">Imagen del Album (URL)</label>
+                <input type="url" id="imagen_album" name="imagen_album" placeholder="Colocar link de la imagen: https://www.webdelaimagen.com/album.jpg" />
+                <br /><br />
+                <span> 
+                    <button type="submit" class="text-xl bg-blue-500 text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Guardar</span></button>
+                    <button type="button" onclick="window.history.back()" class="text-xl bg-blue-500 text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Cancelar</span></button>
+                </span>
+            </form> 
+        </div>
+    </div>
 </body>
 </html>

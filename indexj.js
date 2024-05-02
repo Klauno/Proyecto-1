@@ -4,16 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function addFavorites(favorites) {
       const imgs = document.querySelectorAll(".contenedorimg img");
   
-      imgs.forEach((img) => {
-        if (favorites.includes(img.alt)) {
-          const icon = document.createElement("i");
-          icon.classList.add("fas");
-          icon.classList.add("fa-star");
-          icon.classList.add("favorite-icon");
-          img.parentElement.appendChild(icon);
-          img.parentElement.classList.add("favorite");
-        }
-      });
     }
   
     addFavorites(favoriteRecords);
@@ -35,4 +25,3 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
- 

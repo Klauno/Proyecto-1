@@ -49,7 +49,7 @@ let tickets = {
       Swal.fire({
         title: "¡Lo siento!",
         text: "Debes ser mayor de 18 años para comprar tickets.",
-        icon: "error"
+        icon: "warning"
       }).then(() => {
         const buttons = document.querySelectorAll(".boton");
         buttons.forEach(button => {
@@ -74,7 +74,7 @@ let tickets = {
       Swal.fire(
         "¡Lo siento!",
         "Los tickets para el concierto en " + lugar + " están agotados.",
-        "error"
+        "warning"
       );
     }
     

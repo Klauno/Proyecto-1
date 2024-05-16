@@ -65,3 +65,80 @@ audio {
 }
 
 
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Color de fondo del cuerpo */
+}
+
+/* Estilos para el contenedor principal de los alertas */
+.swal2-popup {
+  border-radius: 12px; /* Borde redondeado */
+  overflow: hidden; /* Ocultar el desbordamiento */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  border: 6px solid #4a90e2; /* Borde sólido de 6px */
+}
+
+/* Estilos para el encabezado del alerta */
+.swal2-header {
+  background-color: #4a90e2; /* Color de fondo */
+  padding: 20px; /* Ajusta el relleno */
+  color: #fff; /* Color del texto */
+  border-bottom: 6px solid #1d5ea8; /* Borde inferior sólido de 6px */
+}
+
+/* Estilos para el contenido del alerta */
+.swal2-content {
+  font-size: 18px;
+  padding: 20px; /* Ajusta el relleno */
+  color: #333; /* Color del texto */
+  background-color: #fff; /* Color de fondo */
+  border-bottom: 6px solid #1d5ea8; /* Borde inferior sólido de 6px */
+}
+
+/* Estilos para el pie del alerta */
+.swal2-footer {
+  background-color: #ff6f61; /* Color de fondo */
+  padding: 20px; /* Ajusta el relleno */
+  border-radius: 0 0 12px 12px; /* Borde redondeado en la parte inferior */
+  border-top: 6px solid #d33f33; /* Borde superior sólido de 6px */
+}
+
+/* Estilos para el mensaje de bienvenida */
+#welcome {
+  font-size: 24px;
+  color: #FFFFFF; /* Color de texto */
+  background-color: #FF5733; /* Color de fondo */
+  padding: 10px 20px; /* Espacio interno */
+  border-radius: 10px; /* Borde redondeado */
+  text-align: center; /* Centrado horizontal */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 20px; /* Distancia desde la parte superior */
+  left: 50%; /* Alineación horizontal al centro */
+  transform: translateX(-50%); /* Centrado horizontal */
+}
+
+/* Estilos adicionales */
+.boton {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transición suave */
+  background-color: #4a90e2; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espacio interno */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+.boton:hover {
+  background-color: #1d5ea8; /* Cambio de color al pasar el ratón */
+}
+
+.boton:active {
+  transform: translateY(2px); /* Efecto de presionar */
+}
+
+/* Otros estilos para elementos específicos, como botones, enlaces, etc., pueden ir aquí */

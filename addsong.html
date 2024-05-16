@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="estilos/styleprincipal.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="addsong.js"></script>
 </head>
 <body class="background-image">
@@ -24,9 +25,9 @@
             <form action="" method="post" class="bg-purple-900 rounded-lg shadow-md p-6" onsubmit="return validarAgregarCancion()">
                 <h2 class="text-center mb-10 text-white">Agregar Canción</h2>
                 <label for="nombreCancion" class="text-white">Nombre de la Canción</label>
-                <input type="text" id="nombreCancion" name="nombreCancion" required /><br /><br />
+                <input type="text" id="nombreCancion" name="nombreCancion" /><br /><br />
                 <label for="duracion" class="text-white">Duración</label>
-                <input type="number" id="duracion" name="duracion" min="0" required />
+                <input type="number" id="duracion" name="duracion"  />
                 <br /><br />
                 <label for="linkYoutube" class="text-white">Link de la Canción en Youtube</label>
                 <input type="url" id="linkYoutube" name="linkYoutube" placeholder="Colocar link de la canción en Youtube" /> <br> <br> 

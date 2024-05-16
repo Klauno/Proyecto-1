@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="estilos/styleprincipal.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="addAlbums.js"></script>
 </head>
 <body class="background-image">
@@ -26,16 +27,16 @@
             <form action="" method="post" class="bg-purple-900 rounded-lg shadow-md p-6" onsubmit="return validarEdicionAlbum()">
                 <h2 class=" text-center mb-10 text-white">Agregar Album</h2>
                 <label for="album" class="text-white">Nombre del Album</label>
-                <input type="text" id="album" name="album" required />
+                <input type="text" id="album" name="album" />
                 <br /><br />
                 <label for="lanzamiento" class="text-white">Año de Lanzamiento del Album</label>
-                <input type="number" id="lanzamiento" name="lanzamiento" min="1900" max="2024" required />
+                <input type="number" id="lanzamiento" name="lanzamiento" />
                 <br /><br />
                 <label for="descripcion" class="text-white">Descripción</label>
-                <textarea name="descripcion" id="descripcion" cols="40" rows="10" required>Descripción</textarea>
+                <textarea name="descripcion" id="descripcion" cols="40" rows="10"></textarea>
                 <br /><br />
                 <label for="imagen_album" class="text-white">Imagen del Album (URL)</label>
-                <input type="url" id="imagen_album" name="imagen_album" placeholder="Colocar link de la imagen: https://www.webdelaimagen.com/album.jpg" />
+                <input type="url" id="imagen_album" name="imagen_album" placeholder="Colocar link de la imagen" />
                 <br /><br />
                 <span> 
                     <button type="submit" class="text-xl bg-blue-500 text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Guardar</span></button>

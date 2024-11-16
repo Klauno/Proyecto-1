@@ -1,21 +1,26 @@
+/* Estilos generales */
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
-
-.background-image {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Color de fondo del cuerpo */
   background-image: url(https://www.gratefulweb.com/sites/default/files/inline-images/9A4A1051.JPG);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Fija la imagen de fondo */
 }
-
+/* Sidebar */
 .sidebar {
   color: #fff;
   padding: 20px;
-  width: 100px;
+  width: 200px; /* Ancho reducido de la sidebar */
+  height: 100vh; /* Altura completa del viewport */
+  position: fixed; /* Mantener sidebar fija */
+  top: 0; /* Alinear al inicio del viewport */
+  left: 0; /* Alinear a la izquierda */
+  background-color: rgba(75, 0, 130, 0.8); /* Fondo semi-transparente para la sidebar */
 }
-
 .ml-56 {
   margin-left: 14rem; /* Ajusta esto según tus necesidades */
 }
@@ -65,14 +70,6 @@ audio {
 }
 
 
-/* Estilos generales */
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2; /* Color de fondo del cuerpo */
-}
 
 /* Estilos para el contenedor principal de los alertas */
 .swal2-popup {
@@ -140,5 +137,24 @@ body {
 .boton:active {
   transform: translateY(2px); /* Efecto de presionar */
 }
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .sidebar {
+      position: relative; /* Cambia a relativo en pantallas pequeñas */
+      width: auto; /* Ancho automático para pantallas pequeñas */
+      height: auto; /* Altura automática para contenido */
+  }
 
-/* Otros estilos para elementos específicos, como botones, enlaces, etc., pueden ir aquí */
+  .flex-container {
+      margin-top: 20px; /* Espacio entre sidebar y contenido */
+      width: calc(100% - 40px); /* Ajustar el ancho del contenido principal */
+      padding-left: 20px; /* Espacio a la izquierda en dispositivos pequeños */
+      padding-right: 20px; /* Espacio a la derecha en dispositivos pequeños */
+  }
+
+  .ml-56 {
+      margin-left: 0; /* Eliminar margen izquierdo en pantallas pequeñas */
+  }
+}
+
+
